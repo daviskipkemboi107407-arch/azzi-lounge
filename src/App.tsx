@@ -1095,7 +1095,7 @@ export default function App() {
                 
                 {/* Responsive Google Maps Iframe */}
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1s0x1829f074a382e753%3A0xe6bf448cf82ca709!2sSakinya%20Motors%20Ltd!5e0!3m2!1sen!2ske!4v1783508600000!5m2!1sen!2ske" 
+                  src="https://www.google.com/maps?q=Azzi+Lounge+Barbers+%26+Spa,+Nakuru,+Kenya&output=embed" 
                   className="w-full h-[350px] sm:h-[450px] rounded-2xl border-0 filter grayscale invert contrast-110 opacity-80" 
                   allowFullScreen={true}
                   loading="lazy" 
