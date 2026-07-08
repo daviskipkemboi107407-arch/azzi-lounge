@@ -1,12 +1,12 @@
 // Azzi Lounge Barbers & Spa Data File
 
 // Import generated images to ensure Vite bundles them correctly
-import heroBg from './assets/images/azzi_hero_bg_1783508699075.jpg';
-import reception from './assets/images/azzi_reception_1783508721785.jpg';
-import barberCutting from './assets/images/azzi_barber_cutting_1783508734314.jpg';
-import spaMassage from './assets/images/azzi_spa_massage_1783508745580.jpg';
-import stylingChairs from './assets/images/azzi_styling_chairs_1783508764543.jpg';
-import groomingTools from './assets/images/azzi_grooming_tools_1783508779525.jpg';
+import heroBg from '../assets/exterior.jpg';
+import reception from '../assets/reception1.jpg';
+import barberCutting from '../assets/barber-action1.jpg';
+import spaMassage from '../assets/reception-service.jpg';
+import stylingChairs from '../assets/styling-chair.jpg';
+import groomingTools from '../assets/interior.jpg';
 
 export interface ServiceItem {
   id: string;
