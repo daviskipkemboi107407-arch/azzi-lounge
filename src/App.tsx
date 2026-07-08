@@ -385,9 +385,13 @@ export default function App() {
               
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden border border-neutral-800 shadow-xl group hover:border-gold-500/30 transition-all duration-300">
-                  <div className="w-full h-56 bg-neutral-900/60 border border-neutral-800 rounded-2xl flex flex-col items-center justify-center p-4 text-center">
-                    <span className="text-xs text-neutral-400 font-semibold font-display">Luxury Reception & Lounge</span>
-                    <span className="text-[10px] text-neutral-500 font-mono mt-1.5 uppercase tracking-wider">[Image Placeholder]</span>
+  <div className="w-full h-56 bg-neutral-900/60 border border-neutral-800 rounded-2xl overflow-hidden relative">
+    <img src={GALLERY_IMAGES.find(g => g.id === 'g2')?.src} alt="Luxury Reception & Lounge" className="w-full h-full object-cover" />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
+      <span className="text-xs text-white font-semibold font-display">Luxury Reception & Lounge</span>
+    </div>
+  </div>
+</div>
                   </div>
                 </div>
                 <div className="rounded-2xl overflow-hidden border border-neutral-800 shadow-xl group hover:border-gold-500/30 transition-all duration-300 p-6 bg-neutral-900/40 backdrop-blur-sm text-center">
@@ -404,11 +408,13 @@ export default function App() {
                   <p className="text-xs text-neutral-400 mt-1">Secure parking and 24/7 guarded premises</p>
                 </div>
                 <div className="rounded-2xl overflow-hidden border border-neutral-800 shadow-xl group hover:border-gold-500/30 transition-all duration-300">
-                  <div className="w-full h-56 bg-neutral-900/60 border border-neutral-800 rounded-2xl flex flex-col items-center justify-center p-4 text-center">
-                    <span className="text-xs text-neutral-400 font-semibold font-display">Premium Styling Lounge</span>
-                    <span className="text-[10px] text-neutral-500 font-mono mt-1.5 uppercase tracking-wider">[Image Placeholder]</span>
-                  </div>
-                </div>
+  <div className="w-full h-56 bg-neutral-900/60 border border-neutral-800 rounded-2xl overflow-hidden relative">
+    <img src={GALLERY_IMAGES.find(g => g.id === 'g5')?.src} alt="Premium Styling Lounge" className="w-full h-full object-cover" />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
+      <span className="text-xs text-white font-semibold font-display">Premium Styling Lounge</span>
+    </div>
+  </div>
+</div>
               </div>
             </div>
 
@@ -819,7 +825,7 @@ export default function App() {
                 <div className="w-full h-full bg-neutral-900 flex flex-col items-center justify-center p-6 text-center group-hover:bg-neutral-850 transition-colors duration-300">
                   <span className="text-sm text-neutral-300 font-semibold font-display">{img.title}</span>
                   <p className="text-xs text-neutral-500 mt-2 line-clamp-3 px-2">{img.alt}</p>
-                  <span className="text-[10px] text-gold-500/60 font-mono mt-4 uppercase tracking-widest">[Image Placeholder]</span>
+                  
                 </div>
                 
                 {/* Image Overlay Label */}
@@ -898,7 +904,7 @@ export default function App() {
                 >
                   <span className="text-lg text-white font-semibold font-display">{GALLERY_IMAGES[lightboxIndex].title}</span>
                   <p className="text-sm text-neutral-400 mt-3 max-w-md">{GALLERY_IMAGES[lightboxIndex].alt}</p>
-                  <span className="text-xs text-neutral-500 font-mono mt-6 uppercase tracking-widest">[Image Placeholder]</span>
+                  
                 </motion.div>
                 
                 {/* Caption text */}
