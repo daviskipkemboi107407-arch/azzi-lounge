@@ -1,0 +1,6 @@
+{
+  "name": "Azzi Lounge Barbers & Spa",
+  "description": "Premium barbershop and spa in Nakuru, Kenya. More Than a Cut — It's a Vibe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
