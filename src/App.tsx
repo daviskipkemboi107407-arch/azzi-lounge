@@ -380,44 +380,40 @@ export default function App() {
             
             {/* Left Column: Custom Visual Cards */}
             <div className="lg:col-span-5 grid grid-cols-2 gap-4 relative">
-              {/* Decorative light wash */}
-              <div className="absolute -top-10 -left-10 w-40 h-40 rounded-full bg-gold-500/10 blur-3xl pointer-events-none" />
-              
-              <div className="space-y-4">
-                <div className="rounded-2xl overflow-hidden border border-neutral-800 shadow-xl group hover:border-gold-500/30 transition-all duration-300">
-  <div className="w-full h-56 bg-neutral-900/60 border border-neutral-800 rounded-2xl overflow-hidden relative">
-    <img src={GALLERY_IMAGES.find(g => g.id === 'g2')?.src} alt="Luxury Reception & Lounge" className="w-full h-full object-cover" />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
-      <span className="text-xs text-white font-semibold font-display">Luxury Reception & Lounge</span>
+  <div className="absolute -top-10 -left-10 w-40 h-40 rounded-full bg-gold-500/10 blur-3xl pointer-events-none" />
+
+  <div className="space-y-4">
+    <div className="rounded-2xl overflow-hidden border border-neutral-800 shadow-xl group hover:border-gold-500/30 transition-all duration-300">
+      <div className="w-full h-56 bg-neutral-900/60 border border-neutral-800 rounded-2xl overflow-hidden relative">
+        <img src={GALLERY_IMAGES.find(g => g.id === 'g2')?.src} alt="Luxury Reception & Lounge" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
+          <span className="text-xs text-white font-semibold font-display">Luxury Reception & Lounge</span>
+        </div>
+      </div>
+    </div>
+    <div className="rounded-2xl overflow-hidden border border-neutral-800 shadow-xl group hover:border-gold-500/30 transition-all duration-300 p-6 bg-neutral-900/40 backdrop-blur-sm text-center">
+      <Award className="w-8 h-8 text-gold-400 mx-auto mb-2" />
+      <h4 className="font-display font-semibold text-white">Elite Salon</h4>
+      <p className="text-xs text-neutral-400 mt-1">Impeccable standards of hygiene & hospitality</p>
+    </div>
+  </div>
+
+  <div className="space-y-4 pt-8">
+    <div className="rounded-2xl overflow-hidden border border-neutral-800 shadow-xl group hover:border-gold-500/30 transition-all duration-300 p-6 bg-neutral-900/40 backdrop-blur-sm text-center">
+      <Shield className="w-8 h-8 text-gold-400 mx-auto mb-2" />
+      <h4 className="font-display font-semibold text-white">Safe & Secure</h4>
+      <p className="text-xs text-neutral-400 mt-1">Secure parking and 24/7 guarded premises</p>
+    </div>
+    <div className="rounded-2xl overflow-hidden border border-neutral-800 shadow-xl group hover:border-gold-500/30 transition-all duration-300">
+      <div className="w-full h-56 bg-neutral-900/60 border border-neutral-800 rounded-2xl overflow-hidden relative">
+        <img src={GALLERY_IMAGES.find(g => g.id === 'g5')?.src} alt="Premium Styling Lounge" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
+          <span className="text-xs text-white font-semibold font-display">Premium Styling Lounge</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-                  </div>
-              
-                <div className="rounded-2xl overflow-hidden border border-neutral-800 shadow-xl group hover:border-gold-500/30 transition-all duration-300 p-6 bg-neutral-900/40 backdrop-blur-sm text-center">
-                  <Award className="w-8 h-8 text-gold-400 mx-auto mb-2" />
-                  <h4 className="font-display font-semibold text-white">Elite Salon</h4>
-                  <p className="text-xs text-neutral-400 mt-1">Impeccable standards of hygiene & hospitality</p>
-                </div>
-              </div>
-
-              <div className="space-y-4 pt-8">
-                <div className="rounded-2xl overflow-hidden border border-neutral-800 shadow-xl group hover:border-gold-500/30 transition-all duration-300 p-6 bg-neutral-900/40 backdrop-blur-sm text-center">
-                  <Shield className="w-8 h-8 text-gold-400 mx-auto mb-2" />
-                  <h4 className="font-display font-semibold text-white">Safe & Secure</h4>
-                  <p className="text-xs text-neutral-400 mt-1">Secure parking and 24/7 guarded premises</p>
-                </div>
-                <div className="rounded-2xl overflow-hidden border border-neutral-800 shadow-xl group hover:border-gold-500/30 transition-all duration-300">
-  <div className="w-full h-56 bg-neutral-900/60 border border-neutral-800 rounded-2xl overflow-hidden relative">
-    <img src={GALLERY_IMAGES.find(g => g.id === 'g5')?.src} alt="Premium Styling Lounge" className="w-full h-full object-cover" />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
-      <span className="text-xs text-white font-semibold font-display">Premium Styling Lounge</span>
-    </div>
-  </div>
-</div>
-              </div>
-            
-
             {/* Right Column: About Content */}
             <div className="lg:col-span-7 space-y-8" id="about_content">
               <div className="space-y-3">
